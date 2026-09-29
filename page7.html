@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Activity 4: CSS Box Model - Chess</title>
+
+<style>
+* {box-sizing: border-box;
+   font-family: Arial;}
+
+body {background-color: #d9b98c;
+      background-image: linear-gradient(45deg, #c9a574 25%, transparent 25%, transparent 75%, #c9a574 75%),
+                        linear-gradient(45deg, #c9a574 25%, transparent 25%, transparent 75%, #c9a574 75%);
+      background-size: 60px 60px;
+      background-position: 0 0, 30px 30px;
+      color: #3b2a1f;
+      text-align: center;
+      margin: 20px;
+      border: 5px solid #5c3518;
+      padding: 10px;}
+
+header {background-color: #fffaf0;
+        border: 5px double #8b4513;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 10px #6b4423;}
+
+h1 {color: #8b4513;
+    background-color: #f2e6d9;
+    margin: 10px;
+    border: 3px solid #8b4513;
+    padding: 10px;
+    border-radius: 10px;}
+
+h2 {color: #fffaf0;
+    background-color: #8b4513;
+    border: 3px double #5c3518;
+    padding: 8px;
+    margin: 15px;
+    border-radius: 8px;}
+
+.content {background-color: #fffaf0;
+          border: 5px solid #8b4513;
+          padding: 20px;
+          margin: 20px auto;
+          max-width: 700px;
+          border-radius: 15px;
+          box-shadow: 5px 5px 10px #6b4423;}
+
+.content img {width: 400px;
+              border: 6px double #8b4513;
+              padding: 5px;
+              margin: 15px;
+              border-radius: 10px;
+              box-shadow: 3px 3px 8px #6b4423;}
+
+.content p {background-color: #f2e6d9;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid #c49a6c;
+            border-radius: 8px;}
+
+.content mark {background-color: #e0b44c;
+               border: 2px solid #8b4513;
+               padding: 3px;
+               border-radius: 4px;}
+
+footer {background-color: #fffaf0;
+        border: 5px double #8b4513;
+        padding: 15px;
+        margin: 20px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 10px #6b4423;}
+
+footer p {border-bottom: 2px solid #c49a6c;
+          padding: 5px;}
+
+a {display: inline-block;
+   color: #fffaf0;
+   background-color: #8b4513;
+   font-weight: bold;
+   margin: 10px;
+   border: 2px solid #5c3518;
+   padding: 8px;
+   border-radius: 6px;}
+
+a:hover {background-color: #c49a6c;
+         color: #3b2a1f;}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1><b>My Favorite Game - Chess</b></h1>
+<p>Activity 4: CSS Box Model</p>
+</header>
+
+<div class="content">
+<h2>Why I Like Chess</h2>
+<img src="https://images.unsplash.com/photo-1586165368502-1bad197a6461" alt="Chess Board">
+
+<p><b>Chess</b> is a strategy game played between two players. Each player has 16 pieces, including a <u>king, queen, rooks, bishops, knights, and pawns.</u></p>
+
+<p>I like chess because it <b>helps me improve my concentration, planning, <i>problem-solving</i>, and <i>decision-making</i> skills.</b></p>
+
+<h2><b>CSS Box Model</b></h2>
+<p>This webpage uses <mark>margin, border, padding, and content.</mark> Each section has different box model styles to demonstrate how these properties work.</p>
+</div>
+
+<footer>
+<p>Created by: <b>Yancee Gabriel Colmenar</b></p>
+<p>Activity 4: <b>CSS Box Model</b></p>
+<a href="page6.html">Activity 6</a>
+<a href="page8CSSperformancetask.html">Performance Task</a>
+</footer>
+
+</body>
+</html>
