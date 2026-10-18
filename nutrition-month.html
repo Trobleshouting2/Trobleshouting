@@ -2,41 +2,132 @@
 <html>
 <head>
 <title>Nutrition Month</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body{font-family:Arial,sans-serif;background:#FFF8DC;margin:0;}
-.container{width:85%;margin:20px auto;background:white;padding:20px;border-radius:10px;box-shadow:0 0 10px gray;}
-h1{text-align:center;color:darkgreen;}
-h2{color:green;}
-.images{text-align:center;}
-.images img{width:260px;height:180px;margin:10px;border:3px solid green;border-radius:10px;}
-.footer{text-align:center;color:gray;margin-top:20px;}
-a{text-decoration:none;color:blue;font-weight:bold;}
-</style>
+* {box-sizing: border-box;}
+body {font-family: Arial, sans-serif;
+      background: #f3f7e9;
+      color: #34452d;
+      margin: 0;
+      line-height: 1.7;}
+header {background: #285c38;
+        color: #fff8dc;
+        text-align: center;
+        padding: 35px 15px;
+        border-bottom: 7px solid #d5a843;}
+header h1 {margin: 0;
+           font-size: 38px;
+           letter-spacing: 2px;}
+header p {margin: 8px 0 0;color: #e5edce;}
+.container {width: 88%;
+            max-width: 1100px;
+            margin: 30px auto;
+            background: #fffdf5;
+            padding: 30px;
+            border: 3px solid #b6c99b;
+            border-radius: 18px;
+            box-shadow: 0 6px 15px #34452d25;}
+.intro {background: #edf4df;
+        padding: 20px;
+        border: 2px solid #a6bf85;
+        border-left: 8px solid #397447;
+        border-radius: 10px;
+        margin-bottom: 25px;}
+h2 {color: #285c38;
+    background: #e5edd5;
+    padding: 10px 15px;
+    border: 2px solid #b6c99b;
+    border-left: 7px solid #d5a843;
+    border-radius: 8px;
+    margin-top: 30px;}
+.images {display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 18px;
+         padding: 18px;
+         background: #f5f0dc;
+         border: 2px dashed #91ad70;
+         border-radius: 14px;}
+.images img {width: 30%;
+             min-width: 200px;
+             height: 200px;
+             object-fit: cover;
+             border: 5px solid white;
+             outline: 2px solid #5d874c;
+             border-radius: 12px;}
+ul {background: #f1f6e8;
+    border: 2px solid #b6c99b;
+    border-radius: 12px;
+    padding: 18px 25px 18px 45px;}
+li {padding: 5px;}
+li::marker {color: #397447;}
+.links {display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 15px;}
+.links a {display: inline-block;
+          background: #397447;
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+          padding: 11px 16px;
+          border: 2px solid #285c38;
+          border-radius: 8px;
+          transition: background 0.2s;}
+.links a:hover {background: #d5a843;color: #263d28;}
+mark {background: #f5df91;
+      color: #34452d;
+      padding: 2px 5px;
+      border-radius: 4px;}
 
+footer {background: #285c38;
+        color: #fff8dc;
+        text-align: center;
+        padding: 22px 15px;
+        border-top: 6px solid #d5a843;
+        margin-top: 35px;}
+footer p {margin: 4px;}
+@media (max-width: 650px) {header h1 {font-size: 29px;}   
+    .container {width: 94%;
+                padding: 16px;}
+                
+    .images img {width: 100%;
+                 min-width: 0;
+                 height: 220px;}           
+    .links {flex-direction: column;}
+    .links a {text-align: center;}
+</style>
 </head>
 <body>
 
-<div class="container">
+<header>
+<h1>🌿 NUTRITION MONTH 🌿</h1>
+<p>Eat Healthy, Live Healthy, Grow Strong!</p>
+</header>
 
-<h1><b>Nutrition Month</b></h1>
+<main class="container">
 
+<section class="intro">
 <p><strong>Nutrition Month</strong> is celebrated every <mark>July</mark> in the Philippines to encourage everyone to eat <b>healthy foods</b> and live an <em>active lifestyle</em>. It reminds people that good nutrition helps us stay <u>strong</u>, healthy, and ready to learn every day.</p>
+</section>
 
 <div class="images">
-<img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600" alt="Healthy Food">
-<img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600" alt="Fresh Fruits">
-<img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600" alt="Vegetable Salad">
+<img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600" alt="A healthy balanced meal">
+<img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600" alt="Fresh fruits and healthy foods">
+<img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600" alt="Fresh vegetable salad">
 </div>
 
-<h2>Why Healthy Eating is Important</h2>
-
+<section>
+<h2>🥗 Why Healthy Eating Is Important</h2>
+        
 <p>Eating a balanced diet gives our body the <strong>energy</strong> it needs. Fruits and vegetables provide <mark>vitamins</mark> and minerals that help protect us from diseases.</p>
-
+        
 <p>Drinking enough water, exercising regularly, and avoiding too much junk food can help improve our overall health and well-being.</p>
+</section>
 
-<h2>Healthy Food Examples</h2>
-
+<section>
+<h2>🍎 Healthy Food Examples</h2>
 <ul>
 <li>🍎 Apples</li>
 <li>🍌 Bananas</li>
@@ -45,22 +136,28 @@ a{text-decoration:none;color:blue;font-weight:bold;}
 <li>🥛 Milk</li>
 <li>🐟 Fish</li>
 </ul>
+</section>
 
-<h2>Useful Links</h2>
+<section>
+<h2>🔗 Useful Links</h2>
+<div class="links">
+<a href="https://trobleshouting2.github.io/Trobleshouting/">Activity 1 - Personal Details</a>
 
-<p><a href="https://trobleshouting2.github.io/Trobleshouting/">Activity 1 - Personal Details</a></p>
+<a href="performance-taskQ1.html">First Quarter Performance Task</a>
 
-<p><a href="performance-taskQ1.html">First Quarter Performance Task</a></p>
+<a href="https://www.google.com">Google</a>
 
-<p><a href="https://www.google.com">Google</a></p>
-
-<p><a href="http://vcmc.eulap.co:8080/cbs/a/login">EULAP LMS</a></p>
-
-<hr>
-
-<p class="footer">Created by: <b>Yancee Gabriel Colmenar</b></p>
+<a href="http://vcmc.eulap.co:8080/cbs/a/login">EULAP LMS</a>
 
 </div>
+</section>
+
+</main>
+
+<footer>
+<p><strong>Created by: <u>Yancee Gabriel Colmenar</u></strong></p>
+<p>🌱 Choose Healthy Foods, Choose a Healthy Life! 🌱</p>
+</footer>
 
 </body>
 </html>
