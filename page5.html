@@ -1,85 +1,172 @@
 <!DOCTYPE html>
-
 <html>
 <head>
 <title>My Favorite Game - Chess</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-body 
-{background-color: #f2e6d9;
- color: #3b2a1f;
- font-family: Arial, sans-serif;
- text-align: center;}
-
-h1 {color: #8b4513;}
-
-img {width: 400px;
-    border-style: double;
-    border-width: 8px;
-    border-color: #8b4513;
-    border-radius: 20px;}
-
-p {font-size: 18px;}
-
-footer 
-{margin-top: 30px;
- padding: 20px;
- border-top: 3px solid #8b4513;}
-
+* {box-sizing: border-box;}
+body {background: linear-gradient(135deg, #f2e6d9, #ead5bd);
+      color: #3b2a1f;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;}
+header {background-color: #6b3e26;
+        color: white;
+        padding: 30px 20px;
+        border: 4px solid #c49a6c;
+        border-bottom: 7px double #e0c3a0;}
+h1 {color: white;
+    font-size: 36px;
+    margin: 0;
+    text-shadow: 2px 2px 3px #3b2a1f;}
+main {max-width: 950px;
+      margin: 30px auto;
+      padding: 0 20px;}
+section {background-color: #fffaf4;
+         border: 3px solid #c49a6c;
+         border-left: 8px solid #8b4513;
+         border-bottom: 5px double #c49a6c;
+         border-radius: 12px;
+         padding: 25px;
+         margin: 25px 0;
+         box-shadow: 0 4px 10px rgba(59, 42, 31, 0.12);}
+img {width: 100%;
+     max-width: 400px;
+     height: auto;
+     border: 8px double #8b4513;
+     border-radius: 15px;
+     padding: 5px;
+     background-color: #ead5bd;
+     margin: 10px 0 20px;}
+h2 {color: #8b4513;
+    font-size: 26px;
+    margin: 0 0 18px;
+    padding: 0 0 10px;
+    border-bottom: 3px solid #c49a6c;}
+p {font-size: 18px;
+   line-height: 1.8;
+   margin: 14px 0;}
+mark {background-color: #ead0ad;
+      color: #3b2a1f;
+      padding: 3px 6px;
+      border: 1px solid #c49a6c;
+      border-radius: 4px;}
+.highlight {background-color: #f2e0ca;
+            border: 3px double #8b4513;
+            border-left: 7px solid #8b4513;
+            border-radius: 8px;
+            padding: 18px;
+            font-weight: bold;}
+.large-text {font-size: 20px;}
+footer {background-color: #6b3e26;
+        color: white;
+        margin-top: 40px;
+        padding: 30px 20px;
+        border: 4px solid #c49a6c;
+        border-top: 7px double #e0c3a0;
+        text-align: center;}
+footer p {color: white;
+          margin: 10px 0;
+          font-size: 16px;}
+footer h2 {color: white;
+           display: table;
+           margin: 25px auto 20px;
+           padding-bottom: 10px;
+           border-bottom: 3px double #e0c3a0;}
+.footer-links {display: flex;
+               justify-content: center;
+               align-items: center;
+               flex-wrap: wrap;
+               gap: 12px;
+               max-width: 800px;
+               margin: 0 auto;}
+.footer-links a {display: inline-block;
+                 background-color: #fff3e4;
+                 color: #6b3e26;
+                 text-decoration: none;
+                 font-weight: bold;
+                 padding: 12px 18px;
+                 border: 2px solid #c49a6c;
+                 border-bottom: 4px solid #8b4513;
+                 border-radius: 7px;
+                 transition: background-color 0.3s, transform 0.3s;}
+.footer-links a:hover {background-color: #e0c3a0;
+                       color: #3b2a1f;
+                       transform: translateY(-3px);}
+section:hover {box-shadow: 0 6px 14px rgba(59, 42, 31, 0.18);}
+@media (max-width: 600px) {
+    header {padding: 25px 15px;}
+    h1 {font-size: 29px;}
+    main {margin: 20px auto;
+          padding: 0 12px;}
+    section {padding: 18px;
+             margin: 18px 0;}
+    h2 {font-size: 22px;}
+    p {font-size: 16px;}
+    .large-text {font-size: 18px;}
+    img {max-width: 100%;}
+    footer {padding: 25px 15px;}
+    .footer-links {flex-direction: column;
+                   gap: 12px;}
+    .footer-links a {width: 100%;
+                     max-width: 280px;
+                     text-align: center;}
+}
 </style>
-
 </head>
-
 <body>
 
-<h1><b>My Favorite Game: <u>Chess</u></b></h1>
+<header>
+    <h1>My Favorite Game: <u>Chess</u></h1>
+</header>
 
-<img src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&w=800&q=80" alt="Chess Board"> 
+<main>
+    <section>
+        <img src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&w=800&q=80" alt="Chess Board">
 
-<h2><b><u>Why I Like Chess</u></b></h2> 
+        <h2>Why I Like Chess</h2>
 
-<p><strong>Chess</strong> is one of my <mark>favorite strategy games</mark> because Chess requires <span style="color: red;">strategy</span> and <span style="color: blue;">patience</span></p>
+        <p><strong>Chess</strong> is one of my <mark>favorite strategy games</mark> because it requires <span style="color: #c62828;">strategy</span> and <span style="color: #1565c0;">patience</span>.</p>
 
-<p><big>Every move is important</big>, and I enjoy learning different strategies and improving my skills.</p>
+        <p><span class="large-text">Every move is important</span>, and I enjoy learning different strategies and improving my skills.</p>
 
-<p>Chess is played by <strong>two players</strong> on a board with <mark>64 squares</mark>. Each player has different pieces, including the king, queen, rook, bishop, knight, and pawn.</p>
+        <p>Chess is played by <strong>two players</strong> on a board with <mark>64 squares</mark>. Each player has different pieces, including the king, queen, rook, bishop, knight, and pawn.</p>
 
-<p>I like chess because it challenges me to <i>think carefully before making a decision</i>. A good player must plan ahead and predict what the opponent might do next.</p>
+        <p>I like chess because it challenges me to <i>think carefully before making a decision</i>. A good player must plan ahead and predict what the opponent might do next.</p>
+    </section>
 
-<h2><b><u>Benefits of Playing Chess</u></b></h2>
+    <section>
+        <h2>Benefits of Playing Chess</h2>
 
-<p>Playing chess can help improve <strong>concentration</strong>, memory, problem-solving, and critical-thinking skills.</p>
+        <p>Playing chess can help improve <strong>concentration</strong>, memory, problem-solving, and critical-thinking skills.</p>
 
-<p>It also teaches me the importance of <mark>patience and discipline</mark>. Sometimes, I may lose a game, but I can learn from my mistakes and become a better player.</p>
+        <p>It also teaches me the importance of <mark>patience and discipline</mark>. Sometimes, I may lose a game, but I can learn from my mistakes and become a better player.</p>
+    </section>
 
-<h2><b><u>My Goal in Chess</u></b></h2>
+    <section>
+        <h2>My Goal in Chess</h2>
 
-<p>My goal is to continue practicing and learning more strategies. I want to improve my skills and become a <strong>better and smarter chess player</strong>.</p>
+        <p>My goal is to continue practicing and learning more strategies. I want to improve my skills and become a <strong>better and smarter chess player</strong>.</p>
 
-<p><big>For me, chess is not just a game. It is a fun way to learn, think, and challenge myself.</big></p>
+        <p class="highlight">For me, chess is not just a game. It is a fun way to learn, think, and challenge myself.</p>
+    </section>
+</main>
 
 <footer>
+    <p><b>Created by:</b> Yancee Gabriel Colmenar</p>
+    <p><b>Grade:</b> Grade-9-Galatians</p>
+    <p><b>Quarter:</b> Quarter 2 (Second Activity)</p>
 
-<p><b>Created by:</b> Yancee Gabriel Colmenar</p>
-<p><b>Grade:</b> Grade-9-Galatians</p>
-<p><b>Quarter:</b> Quarter 2 (Second Activity)</p>
+    <h2>Useful Links</h2>
 
-<h2><b><u>Useful Links</u></b></h2>
-
-<p><a href="https://www.google.com/" target="_blank">Google</a></p>
-
-<p><a href="http://vcmc.eulap.co:8080/cbs/a/login" target="_blank">EULAP Victorious LMS</a></p>
-
-<p><a href="page4.html">Go to Activity 1</a></p>
-
-<p><a href="page6.html">Go to Activity 3</a></p>
-
+    <div class="footer-links">
+        <a href="https://www.google.com/">Google</a>
+        <a href="http://vcmc.eulap.co:8080/cbs/a/login">EULAP Victorious LMS</a>
+        <a href="page4.html">Go to Activity 1</a>
+        <a href="page6.html">Go to Activity 3</a>
+    </div>
 </footer>
 
-</body> 
-</html>
-
-</footer>
-
-</body> 
+</body>
 </html>
