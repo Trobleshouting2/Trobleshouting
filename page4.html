@@ -1,89 +1,197 @@
 <!DOCTYPE html>
-
 <html>
 <head>
 <title>Chess - My Favorite Sports Game</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-
-* { box-sizing: border-box; }
-  body { background-color: lightblue; font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 20px; }
-  h1 { color: darkblue; font-size: 40px; }
-  h2 { color: navy; font-size: 28px; }
-  p { color: black; font-size: 18px; line-height: 1.6; }
-  img { width: 400px; border: 3px solid darkblue; }
-  ul { display: inline-block; text-align: left; font-size: 18px; }
-  li { margin: 8px; }
-  #special { background-color: white; color: darkblue; padding: 15px; border: 2px solid darkblue; font-weight: bold; }
-
+* {box-sizing: border-box;}
+body {background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      color: #263238;}
+header {background-color: #123c69;
+        color: white;
+        padding: 30px 20px;
+        border-bottom: 6px solid #64b5f6;}
+header h1 {color: white;
+           font-size: 42px;
+           margin: 0 0 10px;}
+header p {color: #e3f2fd;
+          font-size: 17px;
+          margin: 0;}
+main {max-width: 950px;
+      margin: 30px auto;
+      padding: 0 20px;}
+section {background-color: white;
+         border: 2px solid #90caf9;
+         border-left: 6px solid #1976d2;
+         border-radius: 12px;
+         padding: 25px;
+         margin: 25px 0;
+         box-shadow: 0 4px 10px rgba(18, 60, 105, 0.12);}
+.chess-image {display: block;
+              width: 100%;
+              max-width: 400px;
+              height: auto;
+              border: 4px solid #123c69;
+              border-radius: 12px;
+              margin: 0 auto 25px;}
+h2 {color: #123c69;
+    font-size: 27px;
+    margin: 0 0 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #bbdefb;}
+p {font-size: 17px;
+   line-height: 1.8;
+   margin: 12px 0;}
+ul {display: inline-block;
+    text-align: left;
+    font-size: 17px;
+    line-height: 1.8;
+    margin: 0 auto;
+    padding-left: 28px;}
+li {margin: 10px 0;
+    padding-left: 4px;}
+#special {background-color: #dbeafe;
+          color: #123c69;
+          padding: 20px;
+          margin: 0;
+          border: 2px solid #1976d2;
+          border-left: 6px solid #123c69;
+          border-radius: 8px;
+          font-weight: bold;}
+mark {background-color: #bbdefb;
+      color: #123c69;
+      padding: 4px 8px;
+      border-radius: 4px;}
+footer {background-color: #123c69;
+        color: white;
+        padding: 30px 20px;
+        margin-top: 40px;
+        border-top: 6px solid #64b5f6;
+        text-align: center;}
+footer p {color: white;
+          margin: 10px 0;
+          line-height: 1.6;}
+footer h2 {color: white;
+           display: table;
+           margin: 25px auto 20px;
+           padding-bottom: 10px;
+           border-bottom: 2px solid #64b5f6;}
+.footer-links {display: flex;
+               justify-content: center;
+               align-items: center;
+               flex-wrap: wrap;
+               gap: 12px;
+               max-width: 800px;
+               margin: 0 auto;}
+.footer-links a {display: inline-block;
+                 background-color: #e3f2fd;
+                 color: #123c69;
+                 text-decoration: none;
+                 font-weight: bold;
+                 padding: 12px 18px;
+                 border: 2px solid #90caf9;
+                 border-radius: 7px;
+                 transition: background-color 0.3s, transform 0.3s;
+                 margin: 0;}
+.footer-links a:hover {background-color: #64b5f6;
+                       color: #102a43;
+                       transform: translateY(-3px);}
+section:hover {box-shadow: 0 6px 14px rgba(18, 60, 105, 0.18);}
+@media (max-width: 600px) {
+    header {padding: 25px 15px;}
+    header h1 {font-size: 34px;}
+    main {margin: 20px auto;
+          padding: 0 12px;}
+    section {padding: 18px;
+             margin: 18px 0;}
+    h2 {font-size: 23px;}
+    p, ul {font-size: 16px;}
+    .chess-image {max-width: 100%;
+                  margin-bottom: 20px;}
+    footer {padding: 25px 15px;}
+    .footer-links {flex-direction: column;
+                   gap: 12px;}
+    .footer-links a {width: 100%;
+                     max-width: 280px;
+                     text-align: center;}
+}
 </style>
-
 </head>
 <body>
 
-<h1>Chess</h1>
+<header>
+    <h1>Chess</h1>
+    <p>My Favorite Sports Game | Quarter 2 - Activity 1</p>
+</header>
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ592Qv7-qOn0Qir4fC3xjJZMBeMAjpNYffsNuhmd0VlA&s=10" alt="A chess set">
+<main>
+    <section>
+        <img class="chess-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ592Qv7-qOn0Qir4fC3xjJZMBeMAjpNYffsNuhmd0VlA&s=10" alt="A chess set">
+        <h2>What is Chess?</h2>
+        <p><b>Chess is a strategy board game played by two players.</b> Each player tries to checkmate the opponent's king. The game requires planning, concentration, and logical thinking.</p>
+    </section>
 
-<h2><b>What is Chess?</b></h2>
+    <section>
+        <h2>Why I Like Chess</h2>
+        <p>I like chess because <u>it challenges my mind and helps me improve my problem-solving and decision-making skills.</u> Every game can be different because players can use different strategies.</p>
+    </section>
 
-<p><b>Chess is a strategy board game played by two players.</b> Each player tries to checkmate the opponent's king. The game requires planning, concentration, and logical thinking.</p>
+    <section>
+        <h2>The Chess Pieces</h2>
+        <ul>
+            <li><b>King</b> - The most important piece that must be protected.</li>
+            <li><b>Queen</b> - The most powerful piece and can move in many directions.</li>
+            <li><b>Rook</b> - Moves horizontally and vertically.</li>
+            <li><b>Bishop</b> - Moves diagonally.</li>
+            <li><b>Knight</b> - Moves in an L-shaped pattern and can jump over pieces.</li>
+            <li><b>Pawn</b> - Usually moves forward and captures diagonally.</li>
+        </ul>
+    </section>
 
-<h2><b>Why I Like Chess</b></h2>
+    <section>
+        <h2>Basic Chess Rules</h2>
+        <ul>
+            <li>Players take turns moving one piece at a time.</li>
+            <li>A player cannot make a move that leaves their own king in check.</li>
+            <li>The game ends when a king is checkmated.</li>
+            <li>A game can also end in a <i>draw</i>.</li>
+        </ul>
+    </section>
 
-<p>I like chess because <u>it challenges my mind and helps me improve my problem-solving and decision-making skills.</u> Every game can be different because players can use different strategies.</p>
+    <section>
+        <h2><mark>Important Chess Skills</mark></h2>
+        <ul>
+            <li>Planning ahead</li>
+            <li>Concentration</li>
+            <li>Problem-solving</li>
+            <li>Patience</li>
+            <li>Strategic thinking</li>
+        </ul>
+    </section>
 
-<h2><b>The Chess Pieces</b></h2> 
-
-<ul>
-<li><b>King</b> - The most important piece that must be protected.</li> 
-<li><b>Queen</b> - The most powerful piece and can move in many directions.</li> 
-<li><b>Rook</b> - Moves horizontally and vertically.</li>
-<li><b>Bishop</b> - Moves diagonally.</li> 
-<li><b>Knight</b> - Moves in an L-shaped pattern and can jump over pieces.</li> 
-<li>Pawn - Usually moves forward and captures diagonally.</li> 
-</ul>
-
-<h2><b>Basic Chess Rules</b></h2>
-
-<ul> 
-<li>Players take turns moving one piece at a time.</li> 
-<li>A player cannot make a move that leaves their own king in check.</li> 
-<li>The game ends when a king is checkmated.</li> 
-<li>A game can also end in a <i>draw</i>.</li> 
-</ul>
-
-<h2><b><mark>Important Chess Skills</mark></b></h2>
-
-<ul>
-<li>Planning ahead</li>
-<li>Concentration</li>
-<li>Problem-solving</li>
-<li>Patience</li>
-<li>Strategic thinking</li>
-</ul>
-
-<h2><u><b>My Conclusion</b></u></h2>
-
-<p id="special">Chess is more than just a board game. It is a fun way to develop critical thinking, patience, and strategic skills.</p>
-
-<hr>
+    <section>
+        <h2>My Conclusion</h2>
+        <p id="special">Chess is more than just a board game. It is a fun way to develop critical thinking, patience, and strategic skills.</p>
+    </section>
+</main>
 
 <footer>
+    <p><b>Created by:</b> Yancee Gabriel Colmenar</p>
+    <p><b>Grade:</b> Grade-9-Galatians</p>
+    <p><b>Quarter:</b> Quarter 2 (First Activity)</p>
 
-<p><b>Created by:</b> Yancee Gabriel Colmenar</p>
-<p><b>Grade:</b> Grade-9-Galatians</p>
-<p><b>Quarter:</b> Quarter 2 (First Activity)</p>
+    <h2>Useful Links</h2>
 
-<h2><b><u>Useful Links</u></b></h2>
-
-<p><a href="https://www.google.com/" target="_blank">Google</a></p>
-
-<p><a href="http://vcmc.eulap.co:8080/cbs/a/login" target="_blank">EULAP Victorious LMS</a></p>
-
-<p><a href="page5.html">Activity 2 - page5.html</a></p>
-
-<p><a href="performance-taskQ1.html">First Quarter Performance Task</a></p>
-
+    <div class="footer-links">
+        <a href="https://www.google.com/">Google</a>
+        <a href="http://vcmc.eulap.co:8080/cbs/a/login">EULAP Victorious LMS</a>
+        <a href="page5.html">Activity 2 - page5.html</a>
+        <a href="performance-taskQ1.html">First Quarter Performance Task</a>
+    </div>
 </footer>
 
 </body>
