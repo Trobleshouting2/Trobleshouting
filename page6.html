@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-
 <html>
 <head>
 <title>My Favorite Game - Chess</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+* {box-sizing: border-box;}
+
 body {background-color: #f2e6d9;
       background-image: url("https://images.unsplash.com/photo-1586165368502-1bad197a6461");
       background-repeat: no-repeat;
@@ -12,66 +14,108 @@ body {background-color: #f2e6d9;
       background-size: cover;
       font-family: Arial, sans-serif;
       text-align: center;
-      color: #3b2a1f;}
+      color: #3b2a1f;
+      margin: 0;
+      padding: 0;}
 
-.content {background-color: white;
-          padding: 40px;
-          margin: 60px auto;
-          width: 80%;
+.content {background-color: rgba(255, 250, 244, 0.96);
+          padding: 35px;
+          margin: 45px auto;
+          width: 85%;
+          max-width: 1000px;
           border: 6px double #8b4513;
-          border-radius: 15px;}
+          border-radius: 18px;
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);}
 
-h1 {color: #8b4513;
-    margin-bottom: 30px;
-    border-bottom: 3px solid #8b4513;
-    padding-bottom: 15px;}
+h1 {color: #6b3e26;
+    font-size: 36px;
+    margin: 0 0 30px;
+    border-bottom: 4px double #c49a6c;
+    padding-bottom: 18px;
+    text-shadow: 1px 1px 2px #d9c0a3;}
 
-p {margin: 25px 0;
-   line-height: 1.6;}
+p {margin: 22px 0;
+   line-height: 1.8;
+   font-size: 18px;}
 
-.info {border: 3px solid #8b4513;
-       padding: 20px;
+.info {background-color: #fff5e8;
+       border: 3px solid #c49a6c;
+       border-left: 8px solid #8b4513;
+       padding: 22px;
        margin: 30px 0;
-       border-radius: 10px;}
+       border-radius: 12px;
+       box-shadow: 0 4px 8px rgba(59, 42, 31, 0.12);}
 
 h2 {color: #8b4513;
-    margin-top: 40px;
-    margin-bottom: 25px;}
+    font-size: 26px;
+    margin-top: 15px;
+    margin-bottom: 22px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0c3a0;}
 
-a {color: #8b4513;
-   margin: 0 20px;
-   border: 2px solid #8b4513;
-   padding: 10px 20px;
+strong {color: #6b3e26;}
+
+a {display: inline-block;
+   background-color: #6b3e26;
+   color: white;
+   margin: 8px;
+   border: 3px solid #c49a6c;
+   border-bottom: 5px solid #3b2a1f;
+   padding: 13px 24px;
    border-radius: 8px;
-   text-decoration: none;}
+   text-decoration: none;
+   font-weight: bold;
+   transition: background-color 0.3s, transform 0.3s;}
 
-footer {margin-top: 60px;
-        background-color: white;
-        border-top: 5px double #8b4513;
-        padding: 20px;
-        line-height: 1.8;}
+a:hover {background-color: #8b4513;
+         transform: translateY(-3px);}
 
+footer {margin-top: 45px;
+        background-color: #6b3e26;
+        color: white;
+        border-top: 7px double #e0c3a0;
+        padding: 28px 20px;
+        line-height: 2;
+        font-size: 16px;}
+
+footer p {margin: 8px 0;
+          font-size: 16px;}
+
+footer b {color: #ffe0b2;}
+
+@media (max-width: 600px) {
+    .content {width: 92%;
+              padding: 20px;
+              margin: 25px auto;}
+    h1 {font-size: 28px;}
+    h2 {font-size: 22px;}
+    p {font-size: 16px;}
+    .info {padding: 16px;}
+    a {display: block;
+       margin: 12px auto;
+       max-width: 230px;}
+    footer {padding: 22px 12px;}
+}
 </style>
-
 </head>
 
 <body>
 
 <div class="content">
 
-<h1><b>My Favorite Sports Game: <u>Chess</u></b></h1>
+<h1>My Favorite Sports Game: <u>Chess</u></h1>
 
-<p>Chess is my favorite sports game because it improves my <b>thinking, planning, and problem-solving skills</b>.</p>
+<p>Chess is my favorite sports game because it improves my <strong>thinking, planning, and problem-solving skills</strong>.</p>
 
 <p>I enjoy playing chess because every game is different and requires careful decisions.</p>
 
 <div class="info">
 
-<h2>About Chess</h2>
+<h2>♟ About Chess</h2>
 
-<p>Chess is a strategy board game played between two players. Each player starts with 16 pieces, including a king, queen, rooks, bishops, knights, and pawns.</p>
+<p>Chess is a strategy board game played between two players. Each player starts with <strong>16 pieces</strong>, including a king, queen, rooks, bishops, knights, and pawns.</p>
 
-<p>The goal of chess is to <b>checkmate the opponent's king</b>. Players must think carefully and plan their moves to gain an advantage.</p>
+<p>The goal of chess is to <strong>checkmate the opponent's king</strong>. Players must think carefully and plan their moves to gain an advantage.</p>
 
 </div>
 
@@ -79,21 +123,27 @@ footer {margin-top: 60px;
 
 <h2>Why I Like Chess</h2>
 
-<p>I like chess because it is challenging and fun. It helps me practice <b>patience, concentration, strategy, and decision-making</b>.</p>
+<p>I like chess because it is challenging and fun. It helps me practice <strong>patience, concentration, strategy, and decision-making</strong>.</p>
 
 </div>
 
+<div class="info">
+
 <h2>My Previous Activities</h2>
 
-<a href="page5.html">Activity 2</a> 
-<a href="page7.html">Activity 4</a>
+<p>Explore my other CSS activities using the links below.</p>
+
+<a href="page5.html">Activity 2 - CSS Border</a>
+<a href="page7.html">Activity 4 - CSS Box Model</a>
+
+</div>
 
 </div>
 
 <footer>
-Created by: <b>Yancee Gabriel Colmenar</b><br>
-Grade 9 - Galatians<br>
-Quarter 2 - Activity 3
+    <p><b>Created by:</b> Yancee Gabriel Colmenar</p>
+    <p><b>Grade:</b> Grade 9 - Galatians</p>
+    <p><b>Quarter:</b> Quarter 2 - Activity 3</p>
 </footer>
 
 </body>
